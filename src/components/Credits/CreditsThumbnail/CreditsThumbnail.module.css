@@ -1,0 +1,22 @@
+.ThumbnailContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Image {
+    max-height: 190px;
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+
+.Name {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    right: 0;
+    width: 100%;
+}

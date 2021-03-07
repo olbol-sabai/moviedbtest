@@ -1,0 +1,25 @@
+@import '../../../scss/mixins.scss';
+
+.InnerDiv1Open {
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+
+.InnerDiv3Open {
+    transform: rotate(-45deg) translate(0px, -11px);
+    transform-origin: right;
+}
+
+.Button {
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 10;
+    @include flex($fd: column);
+    
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.LazyLoaderBackdrop {
+    @include max-height;
+    @include max-width;
+    @include absolute;
+    background-color: #333;
+    @include flex;
+    color: $light-color;
+}

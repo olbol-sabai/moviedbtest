@@ -1,0 +1,35 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+
+.ListContainer {
+    display: grid;
+    gap: 1rem;
+    max-width: 540px;
+    grid-template-columns: repeat(4, 100px);
+    align-items: center;
+    
+    @media(min-width: $screen-m) {
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    @media(max-width: $screen-m) {
+        grid-template-columns: repeat(3, 100px);
+        margin: 1rem auto;
+    }
+    @media(max-width: $screen-s) {
+        grid-template-columns: repeat(2, 100px);
+    }
+
+    .Title {
+        grid-column: 1/5;
+        margin: 0;
+        color: $light-color;
+        @media(max-width: $screen-m) {
+            grid-column: 1/4;
+        }
+        @media(max-width: $screen-s) {
+            grid-column: 1/3;
+        }
+    }
+}

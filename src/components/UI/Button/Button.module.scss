@@ -1,0 +1,15 @@
+@import '../../../scss/variables.scss';
+
+.Button {
+    outline: none;
+    background: transparent;
+    border: $gold-color 1px solid;
+    border-radius: 3px;
+    color: $gold-color;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 2px 7px;
+    z-index: 21;
+    height: 20px;
+    min-width: 40px;
+}

@@ -1,0 +1,13 @@
+@import '../../../scss/variables.scss';
+
+.MenuCircle {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    right: -30px;
+    top: -30px;
+    z-index: 9;
+    overflow: hidden;
+    background-color: $blue-color;
+}

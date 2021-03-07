@@ -1,0 +1,17 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/variables.scss';
+
+
+.RecommendedMovies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 110px);
+    gap: 1rem;
+    width: 100%;
+    justify-content: start;
+    
+    @media(max-width: $screen-s) {
+        .RecommendedMovies {
+            justify-content: center
+        }
+    }
+}

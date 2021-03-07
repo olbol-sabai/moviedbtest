@@ -1,0 +1,19 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/variables.scss';
+
+.ThumbnailContainer {
+    position: relative;
+    min-height: 100px;
+}
+
+.ThumbnailText {
+    @include absolute;
+    @include flex;
+    background: $dark-color;
+    min-width: $image-thumbnail-width;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    opacity: 0.5;
+    z-index: 20;
+}

@@ -1,0 +1,52 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/variables.scss';
+
+.LandingImageContainer {
+    position: relative;
+    @include landing-image;
+    @include max-width;
+    @include flex;
+    
+    .LandingImage {
+        height: 100%;
+        @include max-width;
+        min-height: 250px;
+        object-fit: cover;
+        position: absolute;
+        filter: brightness(0.7);
+    }
+    .FilmData {
+        @include flex($fd: column);
+        z-index: 10;
+        color: white;
+        
+        .FilmTitle {
+            margin: 0;
+            font-size: 32px;
+        }
+        .Date {
+            margin: 10px;
+        }
+        .Stars {
+            width: 200px;
+            @include flex($jc: space-between)
+        }
+    }
+}
+
+
+
+
+
+
+@media(max-width: 500px) {
+    .LandingImageContainer {
+        justify-content: start;
+    }
+    .FilmData {
+        margin-left: 20px;
+    }
+    .FilmTitle {
+        font-size: 25px;
+    }
+}

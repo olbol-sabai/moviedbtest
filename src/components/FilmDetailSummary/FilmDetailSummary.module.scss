@@ -1,0 +1,62 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/variables.scss';
+
+.FilmDetailSummary {
+    margin: auto;
+    transform: translateY(-30px);
+    @include flex($jc: flex-start);
+    @include max-width;
+    
+    @media(max-width: $screen-m) {
+        flex-wrap: wrap ;
+        justify-content: center;
+    }
+    .FilmDetailText {
+        padding: 2rem;
+        color: $light-color;
+        @media(max-width: $screen-m) {
+            padding: 0rem;
+            margin: auto;
+            text-align: center;
+        }
+        .Stats {
+            @include flex($ai: center, $jc: flex-start);
+            margin-bottom: 20px;
+            @media(max-width: $screen-m) {
+                @include flex;
+            }
+            p {
+                margin:0 ;
+                margin-left: 5px;
+            }
+            p:first-child {
+                color: $gold-color;
+            }
+        }
+        .MiscStats {
+            @include flex($jc: flex-start);
+            flex-wrap: wrap;
+            @media(max-width: $screen-m) {
+                @include flex;
+            }
+        
+            .MiscStatsItem {
+                margin: 2px 10px 2px 0px;
+            }
+            .Genre {
+                @include flex;
+                margin: 2px 0px;
+                
+                .GenreItem {
+                    margin-right: 10px
+                }
+            }
+        }
+        .Overview {
+            min-width: 300px;
+            max-width: 1000px;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}

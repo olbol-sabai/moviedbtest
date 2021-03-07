@@ -1,0 +1,41 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.FilmDetailBackdrop {
+    min-height: 100vh;
+    background: $dark-color;
+    
+    .FilmDetailContainer {
+        @include flex($fd: column);
+        padding: 1rem;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        transform: translateY(-30px);
+        
+        .CreditsContainer {
+            @include flex($jc: flex-start);
+            flex-wrap: wrap;
+            align-self: flex-start;
+            @media(max-width: $screen-s) {
+                @include flex($jc: center);
+            }
+        }
+        .RecommendedMoviesContainer {
+            @include flex($ai: flex-start, $fd: column);
+            display: flex;
+            color: $light-color;
+            align-self: flex-start;
+            width: 80%;
+            margin-top: 2rem;
+
+            @media(max-width: $screen-m) {
+                align-self: center;
+            }
+        }
+    }
+}
+
+
+
+

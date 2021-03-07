@@ -1,0 +1,16 @@
+@import '../../../scss/variables.scss';
+
+.ListContainer {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    color: $light-color;
+    z-index: 11;
+}
+
+.MenuItem {
+    margin: 0;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+.FilmGridContainer {
+    height: fit-content;
+    transform: translateY($landing-overlap);
+    display:grid;
+    max-width: 540px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
